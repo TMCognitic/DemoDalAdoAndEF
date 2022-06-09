@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dal.AdoService\Dal.AdoService.csproj" />
+    <ProjectReference Include="..\Dal.Contexts\Dal.Contexts.csproj" />
+    <ProjectReference Include="..\Dal.EfService\Dal.EfService.csproj" />
+    <ProjectReference Include="..\Dal.Entities\Dal.Entities.csproj" />
+    <ProjectReference Include="..\Dal.Repository\Dal.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
